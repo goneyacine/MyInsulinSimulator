@@ -17,7 +17,7 @@ public class Cell_InsulineManager : MonoBehaviour
   public List<CenterGlucoseResever> aliveCenterResevers = new List<CenterGlucoseResever>();
   public Transform glucoseBank;
   private void Update(){
-  if(Time.time - lastUpdateTime >= .15f){
+  if(Time.time - lastUpdateTime >= .2f){
    needFullInsulineResevers = (int)(dataManager.insulineInBlood / 300f );
    if(fullInsulineResevers.Count < needFullInsulineResevers){
    	InsulineResever randomEmptyResever = emptyInsulineResevers[(int)Random.Range(0,emptyInsulineResevers.Count - 1)];

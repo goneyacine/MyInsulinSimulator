@@ -36,6 +36,6 @@ public class GlucoseResever : MonoBehaviour
         }
     }
     private void OnGlucoseEnter(){
-    	insulineManager.glucoseValueInCell += .5f;
+    	insulineManager.glucoseValueInCell += 2f;
     }
 }
